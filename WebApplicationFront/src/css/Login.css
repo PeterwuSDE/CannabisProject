@@ -1,0 +1,106 @@
+.title {
+    position: absolute;
+    left: 31.56%;
+    right: 31.25%;
+    top: 13.53%;
+    bottom: 82.89%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.emailText {
+    position: absolute;
+    left: 9.41%;
+    right: 79.96%;
+    top: 21.77%;
+    bottom: 75.89%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.emailInput {
+    position: absolute;
+    width: 260.93px;
+    height: 38.4px;
+    left: 30px;
+    top: 161.72px;
+}
+
+.passwordText {
+    position: absolute;
+    left: 9.41%;
+    right: 74.96%;
+    top: 34.68%;
+    bottom: 62.99%;
+
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.passwordInput{
+    position: absolute;
+    width: 260.93px;
+    height: 38.4px;
+    left: 30px;
+    top: 244.63px;
+}
+
+.forgetPassword{
+    position: absolute;
+    left: 31.88%;
+    right: 9.06%;
+    top: 52%;
+    bottom: 52.26%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    letter-spacing: 0.02em;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.loginButton {
+    position: absolute;
+    width: 260.93px;
+    height: 43.63px;
+    left: 30px;
+    top: 333px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    background: #000000;
+}
