@@ -1,3 +1,4 @@
+import { Profiler } from "react";
 import {
     BrowserRouter as Router,
     Routes,
@@ -8,6 +9,7 @@ import {
 import home from "./Pages/home.js";
 import Login from "./Pages/Login.js"
 import Register from "./Pages/Register.js"
+import ProfileSettings1 from "./Pages/ProfileSettings1"
 
 function App() {
     return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/" exact component={home}></Route>
           <Route path="/login" exact component={Login}></Route>
           <Route path="/register" exact component={Register}></Route>
+          <Route path="/profileSettings1" exact component={ProfileSettings1}></Route> {/*added route for 1st profile settings page*/}
         </Switch>
       </Router>
     );
