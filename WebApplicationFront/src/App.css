@@ -1,4 +1,4 @@
-body {
+body, html {
   background: #939191; /*should we have some global CSS styles? */
   font: roboto;
 }

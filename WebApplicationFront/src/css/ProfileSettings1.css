@@ -1,0 +1,99 @@
+h1 {
+    width: 41px;
+    height: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 74px;
+    text-align: center;
+}
+/* Profile creation progress bar */
+.slidecontainer {
+    position: absolute;
+    top: 19.41%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .slider {
+    width: 225px;
+    height: 1px;
+  }
+
+  /* Profile information fields */
+  .flex-container {
+    display: flex;
+    
+    position: absolute;
+    height: 470px;
+    width: 241px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25.64%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+    border-radius: 7px;
+    background-color: #C4C4C480;    
+  }
+
+  .photo {
+    position: absolute;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 51px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    background: #DDDDDD;
+    border: 2px solid #DDDDDD;
+    height: 63px;
+    width: 63px;
+    border-radius: 50%;
+  }
+
+  .cross {
+    position: absolute;
+    transform: rotate(45deg);
+    font-size: 30px; 
+    color: #939191; 
+    font-weight: bold; 
+    font-family: helvetica,arial; 
+
+    margin-left: 36%;
+    margin-top: 23%;
+  }
+
+  h2 {
+    width: 61px;
+    height: 12px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 125px;
+    white-space: nowrap;
+    text-align: center;
+
+  }
+  
