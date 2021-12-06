@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Register() {
     return(
         <div>
@@ -13,7 +15,9 @@ export default function Register() {
                 <input type="Email"></input>
             </div>
             <p>I accept the terms and privacy policy</p>
-            <button>Continue</button>
+            <Link to="/profile2">
+                <button>Continue</button>
+            </Link>
         </div>
         
     );

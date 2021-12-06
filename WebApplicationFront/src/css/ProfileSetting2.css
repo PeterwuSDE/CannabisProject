@@ -1,0 +1,232 @@
+.background {
+    width: 320px;
+    height: 706px;
+    background: #939191;
+}
+.title {
+    position: absolute;
+    width: 41px;
+    height: 16px;
+    left: 139px;
+    top: 44px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+.form1 {
+    position: absolute;
+    width: 270px;
+    height: 98px;
+    left: 25px;
+    top: 112px;
+
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 7px;
+}
+
+.label1 {
+    position: absolute;
+    width: 225px;
+    height: 16px;
+    left: 19px;
+    top: 25px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.yesSelection {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 23px;
+    top: 55px;
+}
+.yesLabel { 
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 54px;
+    top: 58px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.noSelection {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 160px;
+    top: 55px;
+}
+.noLabel { 
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: 204px;
+    top: 58px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.form2 {
+    position: absolute;
+    width: 270px;
+    height: 460px;
+    left: 24px;
+    top: 217px;
+
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 7px;
+}
+
+.q1Label {
+    position: absolute;
+    left: 24px;
+    top: 19px;
+    width: 171px;
+    height: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+.q1Options {
+    position: absolute;
+    left: 24px;
+    top: 45px;
+    width: 221px;
+    height: 18px;
+
+    border: 2px solid #DDDDDD;
+    border-radius: 1px;
+}
+
+.q2Label {
+    position: absolute;
+    left: 25px;
+    top: 84px;
+    width: 171px;
+    height: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+.q2Options {
+    position: absolute;
+    left: 24px;
+    top: 127px;
+    width: 221px;
+    height: 18px;
+
+    border: 2px solid #DDDDDD;
+    border-radius: 1px;
+}
+
+.q3Label {
+    position: absolute;
+    left: 24px;
+    top: 161px;
+    width: 171px;
+    height: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+.q3Options {
+    position: absolute;
+    left: 24px;
+    top: 210px;
+    width: 221px;
+    height: 18px;
+
+    border: 2px solid #DDDDDD;
+    border-radius: 1px;
+}
+
+.q4Label {
+    position: absolute;
+    left: 24px;
+    top: 243px;
+    width: 171px;
+    height: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+.q4Options {
+    position: absolute;
+    left: 24px;
+    top: 305px;
+    width: 221px;
+    height: 18px;
+
+    border: 2px solid #DDDDDD;
+    border-radius: 1px;
+}
+
+.submit {
+    position: absolute;
+    width: 77.5px;
+    height: 25px;
+    left: 98px;
+    top: 382px;
+}
+
+.back {
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    left: 120px;
+    top: 422px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
