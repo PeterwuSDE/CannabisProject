@@ -1,3 +1,8 @@
+// without its own CSS file, this page is getting attributes from ProfileSettings1.css, I think?
+import {
+    Link
+  } from "react-router-dom";
+
 export default function Register() {
     return(
         <div>
@@ -13,7 +18,11 @@ export default function Register() {
                 <input type="Email"></input>
             </div>
             <p>I accept the terms and privacy policy</p>
-            <button>Continue</button>
+            {/* for testing, am linking this page to the next page in the profile creation process. 
+            Will have to do anyway right? */}
+            <Link to="profileSettings1">
+                <button>Continue</button>
+            </Link>
         </div>
         
     );
