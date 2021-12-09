@@ -24,7 +24,7 @@ export default function ProfileSettings1() {
             </div> */}
 
             <div className="slidecontainer">
-                <input className="start" type="range" min="0" max="100" value="0" class="slider" id="myRange"></input>
+                <input className="start" type="range" min="0" max="100" value="0" class="slider" id="myRange"/>
                 {/* <input className="end" type="range" min="0" max="100" value="100" class="slider" id="myRange"></input> */}
             </div>
             <div className="flex-container">
@@ -34,14 +34,14 @@ export default function ProfileSettings1() {
                 <h2 className="uploadphoto">Upload Photo</h2>
                 <div className="name">
                     <form>
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Enter name"></input>
+                        <label for="name"/>
+                        <input type="text" id="name" name="name" placeholder="Enter name"/>
                     </form>
                 </div>
                 <div className="age">
                     <form>
                         <label for="age">Enter Age</label>
-                        <input type="number" id="age" age="age"></input>
+                        <input type="number" id="age" age="age"/>
                     </form>
                 </div>
                 <div className="gender">
