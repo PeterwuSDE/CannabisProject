@@ -1,0 +1,319 @@
+.profileheading {
+    width: 41px;
+    height: 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 74px;
+    text-align: center;
+}
+/* Profile creation progress bar */
+
+/* .pbar img {
+  width: 80px;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  width: 200px;
+} */
+
+.slidecontainer {
+    position: absolute;
+    top: 19.41%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+  
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: white;
+  outline: none;
+  width: 225px;
+  height: 1px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%; 
+  background: white;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+}
+
+  /* Profile information fields */
+.flex-container {
+  display: flex;
+    
+  position: absolute;
+  height: 470px;
+  width: 241px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25.64%;
+  left: 0;
+  right: 0;
+  text-align: center;
+    
+  border-radius: 7px;
+  background-color: #C4C4C480;    
+}
+
+.profilephoto {
+  position: absolute;
+    
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 51px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  background: #DDDDDD;
+  border: 2px solid #DDDDDD;
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+}
+
+.cross {
+  position: absolute;
+  transform: rotate(45deg);
+  font-size: 30px; 
+  color: #939191; 
+  font-weight: bold; 
+  font-family: helvetica,arial; 
+
+  margin-left: 36%;
+  margin-top: 23%;
+}
+
+.uploadphoto {
+  width: 61px;
+  height: 12px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 125px;
+  white-space: nowrap;
+  text-align: center;
+
+}
+
+/* figure having this as an unspecific rule is ok since focus isnt relevant on mobile, right? */
+input:focus, select:focus, textarea:focus{
+outline: none;
+}
+
+.name input {
+  position: absolute;
+  height: 16px;
+  width: 115px;
+  background-color: #C4C4C480;
+  color:black;
+  resize: none;
+  border: 2px  solid #DDDDDD;
+  border-radius: 0px;
+  outline: none;
+  font-size: 9px;
+  text-align: end;
+  
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 150px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.name input::placeholder {
+  color: #DDDDDD;
+  font-size: 9px;
+  text-align: left;
+}
+
+.age input {
+  position: absolute;
+  height: 15px;
+  width: 80px;
+  background-color: #C4C4C480;
+  color:black;
+  resize: none;
+  border: 2px  solid #DDDDDD;
+  border-radius: 3px;
+  outline: none;
+  font-size: 9px;
+  text-align: end;
+  
+  margin-left: 125px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 200px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.age label {
+  font-weight: 500;
+  font-size: 11px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: 150px;
+  left: 0;
+  right: 0;
+  margin-top: 202px;
+  white-space: nowrap;
+  text-align: center;
+}
+  
+.gender select{
+  position: absolute;
+  height: 20px;
+  width: 90px;
+  background-color: #C4C4C480;
+  color:black;
+  resize: none;
+  border: 2px  solid #DDDDDD;
+  border-radius: 3px;
+  outline: none;
+  font-size: 9px;
+  text-align: end;
+  
+  margin-left: 125px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 240px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.gender label {
+  font-weight: 500;
+  font-size: 11px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: 130px;
+  left: 0;
+  right: 0;
+  margin-top: 242px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.gender option {
+  color: black;
+  font-size: 14px;
+}
+
+.ethnicity select{
+  position: absolute;
+  height: 20px;
+  width: 90px;
+  background-color: #C4C4C480;
+  color:black;
+  resize: none;
+  border: 2px  solid #DDDDDD;
+  border-radius: 3px;
+  outline: none;
+  font-size: 9px;
+  text-align: end;
+  
+  margin-left: 125px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 280px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.ethnicity label {
+  font-weight: 500;
+  font-size: 11px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: 155px;
+  left: 0;
+  right: 0;
+  margin-top: 282px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.ethnicity option {
+  color: black;
+  font-size: 14px;
+}
+
+.next button {
+  position: absolute;
+  color:white;
+  background-color: #c4c4c4b7;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 80px;
+  height: 25px;
+  
+  margin-left: 35%;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 350px;
+  white-space: nowrap;
+  text-align: center;
+  
+}
+
+.back button {
+  position: absolute;
+  color:white;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 80px;
+  height: 25px;
+  
+  margin-left: 35%;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 380px;
+  white-space: nowrap;
+  text-align: center;
+}

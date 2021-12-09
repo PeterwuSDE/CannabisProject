@@ -15,7 +15,9 @@ export default function Register() {
                 <input type="Email"></input>
             </div>
             <p>I accept the terms and privacy policy</p>
-            <Link to="/profile2">
+            {/* for testing, am linking this page to the next page in the profile creation process. 
+            Will have to do anyway right? */}
+            <Link to="profileSettings1">
                 <button>Continue</button>
             </Link>
         </div>
