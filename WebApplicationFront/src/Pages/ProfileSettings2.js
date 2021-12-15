@@ -1,4 +1,5 @@
 import  '../css/ProfileSetting2.css';
+import { Link } from "react-router-dom";
 
 export default function ProfileSettings2() {
     return(
@@ -32,7 +33,8 @@ export default function ProfileSettings2() {
                 <label className="q4Label">How long you have been using cannabis to treat pain?</label>
                 <input className="q4Options" type="range" min="0" max="36" id="myRange"/>
                 <input className="submit" type="submit" value="Submit"/>
-                <a className="back">back</a>
+                <Link to="ProfileSettings1"><a className="back">back</a></Link>
+                <Link to="Sessions"><a className="back">Sessions</a></Link>
             </form>
         </div>
         

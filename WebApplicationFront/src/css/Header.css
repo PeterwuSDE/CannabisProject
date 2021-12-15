@@ -1,0 +1,19 @@
+.Header {
+    position: absolute;
+    width: 320px;
+    height: 37px;
+    text-align: center;
+    background: #C4C4C4;
+}
+
+.text {
+    position: absolute;
+    left: 145px;
+    top: 0px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}

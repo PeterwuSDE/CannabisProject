@@ -1,0 +1,90 @@
+.plusIcon {
+    position: absolute;
+    width: 32px;
+    height: 35px;
+    left: 34px;
+    top: 191px;
+}
+
+.session {
+    background-color: white;
+    width: 320px;
+    height: 622px;
+}
+
+.title {
+    position: absolute;
+    width: 128px;
+    height: 23px;
+    left: 95px;
+    top: 88px;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.description {
+    position: absolute;
+    width: 252px;
+    height: 16px;
+    left: 34px;
+    top: 187px; 
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+.button {
+    position: absolute;
+    width: 32px;
+    height: 35px;
+    left: 34px;
+    top: 134px;
+
+    background: #C4C4C4;
+    border-radius: 8px;
+}
+
+.button2 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 281px;
+    top: 581px;
+}
+
+.description2 {
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    left: 77px;
+    top: 134px;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #000000;
+}
+
+hr {
+    position: absolute;
+    width: 264px;
+    height: 0px;
+    left: 33px;
+    top: 173px;
+}
