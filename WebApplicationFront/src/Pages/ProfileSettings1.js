@@ -1,31 +1,12 @@
 import '../css/ProfileSettings1.css';
-import {
-    Link
-  } from "react-router-dom";
-/* too verbose of a title? wanted to make it clear which page. 
-This being the first of two profile settings pages, after the registration page */
+import { Link } from "react-router-dom";
 
 export default function ProfileSettings1() {
     return(
         <div className='profilesSettings1' id="profileSettings1">
             <h1 className="profileheading">Profile</h1>
-            {/* <div className="pbar">
-                <ul className="pbar-items">
-                    <li>
-                        <img src="assets/images/pbar_current.png" />
-                    </li>
-                    <li>
-                        <img src="assets/images/pbar_bar.png" />
-                    </li>
-                    <li>
-                        <img src="assets/images/pbar_other.png" />
-                    </li>
-                </ul>
-            </div> */}
-
             <div className="slidecontainer">
                 <input className="start" type="range" min="0" max="100" value="0" class="slider" id="myRange"/>
-                {/* <input className="end" type="range" min="0" max="100" value="100" class="slider" id="myRange"></input> */}
             </div>
             <div className="flex-container">
                 <div className="profilephoto">

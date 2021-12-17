@@ -15,16 +15,6 @@
     text-align: center;
 }
 /* Profile creation progress bar */
-
-/* .pbar img {
-  width: 80px;
-  text-align: center;
-}
-ul li {
-  display: inline-block;
-  width: 200px;
-} */
-
 .slidecontainer {
     position: absolute;
     top: 19.41%;
@@ -126,8 +116,6 @@ ul li {
   text-align: center;
 
 }
-
-/* figure having this as an unspecific rule is ok since focus isnt relevant on mobile, right? */
 input:focus, select:focus, textarea:focus{
 outline: none;
 }

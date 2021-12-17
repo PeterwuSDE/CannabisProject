@@ -1,0 +1,101 @@
+.add-product-box {
+  display: flex;
+  position: absolute;
+  height: 36px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25.64%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #C4C4C4; 
+}
+.add-product-box h2 {
+    font-size: 14px;
+    line-height: 10px; 
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.product-list-box {
+  display: flex;
+  position: absolute;
+  height: 36px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 7px;
+  background: transparent; /* will need to animate */
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.product-list-box h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+}
+
+.product-buttons hr {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 0 none;
+}
+
+.list-item__container {
+  display: flex;
+  position: absolute;
+  height: 132px;
+  width: 246px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #C4C4C4; 
+}
+.item-type {
+    position: absolute;
+    margin-left: 18px;
+}
+.item-subtype {
+    position: absolute;
+    font-size: 14px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.item-chemo-type {
+    font-size: 14px;
+    display:flex;
+    align-items:center;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.item-thc {
+    padding-right: 10px;
+}
+.list-section hr {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin-top: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 0 none;
+}

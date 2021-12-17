@@ -1,9 +1,9 @@
-import  '../css/ProfileSetting2.css';
+import  '../css/ProfileSettings2.css';
 
 export default function ProfileSettings2() {
     return(
-        <div className="background">
-            <p className="title">Profile</p>
+        <div className="ps2background">
+            <p className="ps2title">Profile</p>
             <form className="form1">
                 <p className="label1">Are you treating pain with cannabis?</p>
                 <input className="yesSelection" type="radio" id="yes" name="choice" value="YES"/>
@@ -31,8 +31,8 @@ export default function ProfileSettings2() {
                 </select>
                 <label className="q4Label">How long you have been using cannabis to treat pain?</label>
                 <input className="q4Options" type="range" min="0" max="36" id="myRange"/>
-                <input className="submit" type="submit" value="Submit"/>
-                <a className="back">back</a>
+                <input className="ps2submit" type="submit" value="Submit"/>
+                <a className="ps2back">back</a>
             </form>
         </div>
         
