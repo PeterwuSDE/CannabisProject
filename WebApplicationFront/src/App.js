@@ -13,6 +13,7 @@ import Register from "./Pages/Register.js";
 import ProfileSettings1 from "./Pages/ProfileSettings1"
 import AddProduct from './Pages/AddProduct';
 import ProductList from "./Pages/ProductList";
+import MyReports from './Pages/MyReports';
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/profileSettings1" exact component={ProfileSettings1}></Route> 
           <Route path="/addproduct" exact component={AddProduct}></Route>
           <Route path="/productlist" exact component={ProductList}></Route>
+          <Route path="/myreports" exact component={MyReports}></Route>
         </Switch>
       </Router>
     );
