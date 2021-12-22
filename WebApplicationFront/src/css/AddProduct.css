@@ -73,6 +73,7 @@
   position: absolute;
   margin-top: 50px;
 }
+
 /* Customize the label (the container) */
 .type-selection .container {
   display: inline-block;
@@ -88,8 +89,22 @@
   -ms-user-select: none;
   user-select: none;
 }
+.orals-container{
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 82px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /* Hide the browser's default checkbox */
-.type-selection .container input {
+.type-selection .container input, .type-selection .orals-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -113,15 +128,15 @@
   display: none;
 }
 /* When the checkbox is checked, change background color */
-.type-selection .container input:checked ~ .checkmark {
+.type-selection .container input:checked ~ .checkmark, .type-selection .orals-container input:checked ~ .checkmark {
   background-color: white;
 }
 /* Show the checkmark when checked */
-.type-selection .container input:checked ~ .checkmark:after {
+.type-selection .container input:checked ~ .checkmark:after, .type-selection .orals-container input:checked ~ .checkmark:after {
   display: block;
 }
 /* Style the checkmark/indicator */
-.type-selection .container .checkmark:after {
+.type-selection .container .checkmark:after, .type-selection .orals-container .checkmark:after {
   top: 4px;
   left: 4px;
   width: 7px;
@@ -221,9 +236,9 @@
 }
 
 .exit-button {
-  position: absolute;
-  margin-top: 100px;
-  margin-left: -220px;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
 
   color:white;
   background-color: rgba(0, 0, 0, 0.349);
@@ -236,11 +251,10 @@
   height: 25px;
 }
 
-.save-button {
-  position: absolute;
-  margin-top: 100px;
-  margin-left: -5px;
-  margin-bottom: 20px;
+.next-button {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
 
   color:white;
   background-color: black;

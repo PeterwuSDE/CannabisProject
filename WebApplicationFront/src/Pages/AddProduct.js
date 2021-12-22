@@ -7,12 +7,13 @@ import { SmokingSubtypes } from './../Components/SmokingSubtypes';
 import { VapingSubtypes } from "../Components/VapingSubtypes";
 import { OralsSubtypes } from "../Components/OralsSubtypes";
 import "animate.css"; //for pending checkmark animation
+import { animateScroll as scroll } from "react-scroll";
 
 export default function AddProduct () {
     
     const [selectedRadioBtn, setSelectedRadioBtn] = useState(""); //remember to turn back to empty string
     const isRadioSelected = (value) => selectedRadioBtn === value;
-    const handleRadioClick = (e) => setSelectedRadioBtn(e.currentTarget.value)
+    const handleRadioClick = (e) => setSelectedRadioBtn(e.currentTarget.value);
 
         return (   
             <div className="addproduct"> 
@@ -23,9 +24,7 @@ export default function AddProduct () {
                 <div className="AddProduct__heading">
                     <h1>Add Cannabis Product</h1>
                 </div>
-                <div className="slidecontainer">        {/* style inherited from ProfileSettings1 */}
-                    <input type="range" min="0" max="100" value="0" className="slider" id="myRange"/>
-                </div>
+                
                 <div className ="flex-container__photo">
                     <h2>Upload picture of your <br></br>cannabis product:</h2>
                     <FontAwesomeIcon className="camera" icon={faCamera} size="1x" />
@@ -70,7 +69,7 @@ export default function AddProduct () {
                             />
                             <span className="checkmark"></span>
                         </label>
-                        <label className="container" for="orals">Orals
+                        <label className="orals-container" for="orals">Orals
                             <input 
                                 type="radio" 
                                 name="type" 
@@ -84,58 +83,96 @@ export default function AddProduct () {
                         </label>
                     </form>
                 </div>
-                <div className="flex-container__subtype">
-                    <h1>Select Subtype:</h1>
-                    <div className="x"> &times; </div>
-                    { (selectedRadioBtn==="smoking" && <SmokingSubtypes />) || 
-                      (selectedRadioBtn==="vaping" && <VapingSubtypes />) ||
-                      (selectedRadioBtn==="orals" && <OralsSubtypes />) ||
-                      (selectedRadioBtn==="topical" && 
-                        <h2 className="topical-subtype__heading">
-                          There are no subtypes for topical products, please continue to the next section.
-                        </h2>) }
-                </div>
-                <div className="flex-container__strain">
-                    <div className="x"> &times; </div>
-                    <div className="strain-selection">
-                        <label for="strain-choice">Select Strain:</label>
-                        <input list="strains" id="strain-choice" name="strain-choice" />
-                        <datalist id="strains">
-                                <option value="Blue Dream"/>
-                                <option value="Northern Lights" />
-                                <option value="Trainwreck" />
-                                <option value="AK47"/>
-                                <option value="Bubba Kush"/>
-                                <option value="Jack Herer"/>
-                                <option value="White Widow"/>
-                                <option value="Granddaddy Purple"/>
-                                <option value="Girl Scout Cookies"/>
-                                <option value="Green Crack"/>
-                                <option value="OG Kush"/>
-                                <option value="Sour Diesel"/>
-                                <option value="Lemon Haze"/>
-                                <option value="Super Silver Haze"/>
-                                <option value="Durban Poison"/>
-                                <option value="Chemdawg"/>
-                                <option value="Purple Kush"/>
-                                <option value="Pineapple Express"/>
-                                <option value="Headband"/>
-                                <option value="Blue Cheese"/>
-                                <option value="Blackberry Kush" />
-                        </datalist>
-                        <h3>Add Chemo Type:</h3>
-                        <label for="thc">THC</label>
-                        <input type="number" id="thc" name="thc" min="0" max="100" placeholder="          %"/> 
-                        <label for="cbd">CBD</label>
-                        <input type="number" id="cbd" name="cbd" min="0" max="100" placeholder="          %"/> 
-                        <Link to="home">
-                            <button className="exit-button">Exit</button>
-                        </Link>
-                        <Link to="productlist">
-                            <button id="_onclick" className="save-button">Save</button>
-                        </Link>
-                    </div>
-                </div>
+                
+                { (selectedRadioBtn!=="" && 
+                    <div className="flex-container__subtype">
+                        <h1>Select Subtype:</h1>
+                        <div className="x"> &times; </div>
+                        { (selectedRadioBtn==="smoking" && <SmokingSubtypes />) || 
+                        (selectedRadioBtn==="vaping" && <VapingSubtypes />) ||
+                        (selectedRadioBtn==="orals" && <OralsSubtypes />) ||
+                        (selectedRadioBtn==="topical" && 
+                            <h2 className="topical-subtype__heading">
+                            There are no subtypes for topical products, please continue to the next section.
+                            </h2>)}
+
+                    </div>) 
+                }
+
+                { selectedRadioBtn!==""&&selectedRadioBtn!=="topical" && 
+                    (<div className="flex-container__strain" >
+                        <div className="x"> &times; </div>
+                        <div className="strain-selection">
+                            <label for="strain-choice">Select Strain:</label>
+                            <input list="strains" id="strain-choice" name="strain-choice" />
+                            <datalist id="strains">
+                                    <option value="Cinderella 99"/>
+                                    <option value="Hindu Kush"/>
+                                    <option value="Mango Kush"/>
+                                    <option value="$100 OG"/>
+                                    <option value="NYC Diesel"/>
+                                    <option value="Tahoe OG Kush"/>
+                                    <option value="Death Star"/>
+                                    <option value="Bubble Gum"/>
+                                    <option value="Skywalker OG"/>
+                                    <option value="Purple Haze"/>
+                                    <option value="G13"/>
+                                    <option value="Lemon Kush"/>
+                                    <option value="God's Gift"/>
+                                    <option value="Purple Urkle"/>
+                                    <option value="Skywalker"/>
+                                    <option value="Amnesia Haze"/>
+                                    <option value="Cherry Pie"/>
+                                    <option value="Chocolope"/>
+                                    <option value="LA Confidential"/>
+                                    <option value="White Rhino"/>
+                                    <option value="Maui Waui"/>
+                                    <option value="Afghan Kush"/>
+                                    <option value="Super Lemon Haze"/>
+                                    <option value="Master Kush"/>
+                                    <option value="Cheese"/>
+                                    <option value="Blueberry"/>
+                                    <option value="Grape Ape"/>
+                                    <option value="Strawberry Cough"/>
+                                    <option value="Blackberry Kush"/>
+                                    <option value="Alaskan Thunder Fuck"/>
+                                    <option value="Blue Dream"/>
+                                    <option value="Northern Lights" />
+                                    <option value="Trainwreck" />
+                                    <option value="AK47"/>
+                                    <option value="Bubba Kush"/>
+                                    <option value="Jack Herer"/>
+                                    <option value="White Widow"/>
+                                    <option value="Granddaddy Purple"/>
+                                    <option value="Girl Scout Cookies"/>
+                                    <option value="Green Crack"/>
+                                    <option value="OG Kush"/>
+                                    <option value="Sour Diesel"/>
+                                    <option value="Lemon Haze"/>
+                                    <option value="Super Silver Haze"/>
+                                    <option value="Durban Poison"/>
+                                    <option value="Chemdawg"/>
+                                    <option value="Purple Kush"/>
+                                    <option value="Pineapple Express"/>
+                                    <option value="Headband"/>
+                                    <option value="Blue Cheese"/>
+                                    <option value="Blackberry Kush" />
+                            </datalist>
+                            <h3>Add Chemo Type:</h3>
+                            <label for="thc">THC</label>
+                            <input type="number" id="thc" name="thc" min="0" max="100" placeholder="          %"/> 
+                            <label for="cbd">CBD</label>
+                            <input type="number" id="cbd" name="cbd" min="0" max="100" placeholder="          %"/> 
+                            
+                        </div>
+                    </div> ) 
+                }
+                <Link to="home">
+                    <button className="exit-button">Exit</button>
+                </Link>
+                <Link to="productlist">
+                    <button id="_onclick" className="next-button">Next</button>
+                </Link>
                 <img className="checkmark-complete__img" src="assets/images/Check_icon.png" />
             </div>
         );
