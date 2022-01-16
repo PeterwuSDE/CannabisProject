@@ -14,7 +14,7 @@ export default function Login() {
                 <input className="passwordInput" type="Password"></input>
             </div>
             <a className="forgetPassword">forget password?</a>
-            <button className="Button">Login</button>
+            <button className="loginButton">Login</button>
         </div>
         
     );
