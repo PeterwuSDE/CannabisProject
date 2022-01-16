@@ -11,6 +11,10 @@ import Login from "./Pages/Login.js";
 import ProfileSettings2 from "./Pages/ProfileSettings2.js";
 import Register from "./Pages/Register.js";
 import ProfileSettings1 from "./Pages/ProfileSettings1"
+import AddProduct from './Pages/AddProduct';
+import ProductList from "./Pages/ProductList";
+import MyReports from './Pages/MyReports';
+import NavHome from "./Pages/NavHome"
 
 function App() {
     return (
@@ -20,7 +24,11 @@ function App() {
           <Route path="/login" exact component={Login}></Route>
           <Route path="/register" exact component={Register}></Route>
           <Route path="/profileSettings2" exact component={ProfileSettings2}></Route>
-          <Route path="/profileSettings1" exact component={ProfileSettings1}></Route> {/*added route for 1st profile settings page*/}
+          <Route path="/profileSettings1" exact component={ProfileSettings1}></Route> 
+          <Route path="/addproduct" exact component={AddProduct}></Route>
+          <Route path="/productlist" exact component={ProductList}></Route>
+          <Route path="/myreports" exact component={MyReports}></Route>
+          <Route path="/navhome" exact component={NavHome}></Route>
         </Switch>
       </Router>
     );

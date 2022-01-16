@@ -1,0 +1,290 @@
+.AddProduct__heading { margin: 0 auto; }
+.AddProduct__heading h1 {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 85px;
+    font-weight: 500;
+}
+/* Photo upload section */
+.flex-container__photo {
+    display: flex;
+      
+    position: absolute;
+    height: 51px;
+    width: 274px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23%;
+    left: 0;
+    right: 0;
+  
+      
+    border-radius: 7px;
+    background-color: #C4C4C480;   
+    box-shadow: -1px 4px 3px 0px #00000086;
+  }
+.flex-container__photo h2 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 40px;
+  width: 180px;
+  word-wrap:break-word; 
+  display:inline-block;    
+}
+.flex-container__photo .camera {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.flex-container__type {
+  display: flex;
+      
+  position: absolute;
+  height: 186px;    
+  width: 274px;
+    
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45%;
+  left: 0;
+  right: 0;
+      
+  border-radius: 7px;
+  background-color: #C4C4C480;   
+  box-shadow: -1px 4px 3px 0px #00000086;
+}
+.flex-container__type h1 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.flex-container__type .x {
+  margin-top: -5px;
+  font-size: 35px;
+  color: black;
+  margin-left: 140px;
+}
+
+.type-selection {
+  position: absolute;
+  margin-top: 50px;
+}
+
+/* Customize the label (the container) */
+.type-selection .container {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.orals-container{
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 82px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.type-selection .container input, .type-selection .orals-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3.5px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* When the checkbox is checked, change background color */
+.type-selection .container input:checked ~ .checkmark, .type-selection .orals-container input:checked ~ .checkmark {
+  background-color: white;
+}
+/* Show the checkmark when checked */
+.type-selection .container input:checked ~ .checkmark:after, .type-selection .orals-container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.type-selection .container .checkmark:after, .type-selection .orals-container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: black;
+}
+
+/* subtype selection, conditionally rendered based on which type is selected */
+.flex-container__subtype {
+  display: flex;
+  position: absolute;
+  height: 238px;    
+  width: 274px;
+    
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110%;
+  left: 0;
+  right: 0;
+      
+  border-radius: 7px;
+  background-color: #C4C4C480;   
+  box-shadow: -1px 4px 3px 0px #00000086;
+}
+.flex-container__subtype h1 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.flex-container__subtype .x {
+  margin-top: 0px;
+  font-size: 35px;
+  color: black;
+  margin-left: 110px;
+}
+
+.topical-subtype__heading {
+  font-style: italic;
+  padding-top: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: -245px;
+  font-weight: 300;
+  color: rgb(255, 45, 45);
+}
+
+.flex-container__strain {
+  display: flex;
+  position: absolute;
+  height: 218px;    
+  width: 274px;
+    
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 190%;
+  left: 0;
+  right: 0;
+      
+  border-radius: 7px;
+  background-color: #C4C4C480;   
+  box-shadow: -1px 4px 3px 0px #00000086;
+}
+.flex-container__strain .x {
+  margin-top: 0px;
+  font-size: 35px;
+  color: black;
+  margin-left: 240px;
+}
+
+.strain-selection {
+  position: relative;
+  margin-top: 25px;
+  margin-left: -240px;
+  z-index: 5;
+}
+.strain-selection label {
+  position: relative;
+  font-weight: 500;
+
+}
+.strain-selection datalist {
+  position: relative;
+  z-index: 3;  
+}
+
+.strain-selection h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 0px;
+}
+.strain-selection #thc, #cbd {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.exit-button {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+
+  color:white;
+  background-color: rgba(0, 0, 0, 0.349);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 60px;
+  height: 25px;
+}
+
+.next-button {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+
+  color:white;
+  background-color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 60px;
+  height: 25px;
+}
+
+.checkmark-complete__img {
+  position:absolute;
+  width: 50vw;
+  height: 30vh;
+  margin-left: 80px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  display: none;
+}
+.checkmark-complete__img_onclick {
+  opacity:0;
+}
+
+
+
+
+
+
+

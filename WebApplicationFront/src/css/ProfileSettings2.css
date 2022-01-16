@@ -1,9 +1,9 @@
-.background {
+.ps2background {
     width: 320px;
     height: 706px;
     background: #939191;
 }
-.title {
+.ps2title {
     position: absolute;
     width: 41px;
     height: 16px;
@@ -207,7 +207,7 @@
     border-radius: 1px;
 }
 
-.submit {
+.ps2submit {
     position: absolute;
     width: 77.5px;
     height: 25px;
@@ -215,7 +215,7 @@
     top: 382px;
 }
 
-.back {
+.ps2back {
     position: absolute;
     width: 30px;
     height: 16px;

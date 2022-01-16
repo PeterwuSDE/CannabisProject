@@ -1,0 +1,76 @@
+.smoking-subtypes, .vaping-subtypes, .orals-subtypes {
+  margin-top: 50px;
+  margin-left: -240px;
+  margin-right: 100px;
+  white-space: nowrap;
+}
+.subtype-container {
+    position: absolute;
+    margin-left: auto;
+    margin-right: 100px;
+}
+/* Customize the label (the container) */
+.subtype-selection .subtype-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .subtype-selection .subtype-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+ .subtype-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .subtype-container:hover input ~ .subtype-checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a background */
+  .subtype-container input:checked ~ .subtype-checkmark {
+    background-color: white;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .subtype-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .subtype-selection .subtype-container input:checked ~ .subtype-checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .subtype-checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: black;
+  }
