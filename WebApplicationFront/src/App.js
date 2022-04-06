@@ -13,6 +13,7 @@ import Register from "./Pages/Register.js";
 import ProfileSettings1 from "./Pages/ProfileSettings1"
 import Sessions from "./Pages/Sessions.js";
 import NewSession from "./Pages/NewSession.js";
+import MoodJournal from "./Pages/MoodJournal.js";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/profileSettings1" exact component={ProfileSettings1}></Route> {/*added route for 1st profile settings page*/}
           <Route path="/sessions" exact component={Sessions}></Route>
           <Route path="/newsession" exact component={NewSession}></Route>
+          <Route path="/moodJournal" exact component={MoodJournal}></Route>
         </Switch>
       </Router>
     );

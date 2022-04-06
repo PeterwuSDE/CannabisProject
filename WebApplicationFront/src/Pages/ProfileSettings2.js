@@ -13,7 +13,7 @@ export default function ProfileSettings2() {
                 <label className="noLabel" for="html">No</label>
             </form>
             <form className="form2">
-                <label className="q1Label" for="q1">Where is your pain located?</label>
+                <label className="q1Label" for="q1">What type of pain do you have?</label>
                 <select className="q1Options" name="q1" id="q1">
                     <option value="head">Head</option>
                     <option value="shoulder">Shoulder</option>

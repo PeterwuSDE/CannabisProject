@@ -1,0 +1,174 @@
+.greeting {
+    position: absolute;
+    width: 250px;
+    height: 23px;
+    left: 46px;
+    top: 67px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.category1 {
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 128px;
+    top: 115px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.category2 {
+    position: absolute;
+    width: 54px;
+    height: 19px;
+    left: 128px;
+    top: 261px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.category3 {
+    position: absolute;
+    width: 81px;
+    height: 19px;
+    left: 128px;
+    top: 359px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.category4 {
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 128px;
+    top: 469px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.bar1 {
+    position: absolute;
+    left: 45px;
+    top: 185px;
+}
+
+.bar2 {
+    position: absolute;
+    left: 45px;
+    top: 295px;
+}
+
+.bar3 {
+    position: absolute;
+    left: 45px;
+    top: 405px;
+}
+
+.bar4 {
+    position: absolute;
+    left: 45px;
+    top: 505px;
+}
+
+.title {
+    position: absolute;
+    width: 180px;
+    height: 16px;
+    left: 76px;
+    top: 145px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+hr {
+    position: absolute;
+    width: 289px;
+    height: 1px;
+    left: 16px;
+    top: 595px;
+
+    background: #FFFFFF;
+}
+
+.note {
+    position: absolute;
+    width: 43px;
+    height: 19px;
+    left: 139px;
+    top: 621px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.box {
+    position: absolute;
+    width: 293px;
+    height: 68px;
+    left: 12px;
+    top: 666px;
+}
+
+.submit {
+    position: absolute;
+    left: 84px;
+    top: 779px;
+    height: 47px;
+    width: 152px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}

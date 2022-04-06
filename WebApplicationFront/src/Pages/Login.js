@@ -1,5 +1,6 @@
 import '../css/Login.css';
 import "@fontsource/open-sans";
+import { Link } from "react-router-dom";
 
 export default function Login() {
     return(
@@ -14,7 +15,9 @@ export default function Login() {
                 <input className="passwordInput" type="Password"></input>
             </div>
             <a className="forgetPassword">forget password?</a>
-            <button className="loginButton">Login</button>
+            <Link to="/profilesettings1">
+                <button className="loginButton">Login</button>
+            </Link>
         </div>
         
     );

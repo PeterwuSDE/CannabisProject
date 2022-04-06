@@ -1,11 +1,10 @@
 const sql = require("../database/db.js");
 const Profile = function(profile) {
-    this.Type = profile.Type;
-    this.StrainName = profile.StrainName;
-    this.ProductName = profile.ProductName;
-    this.THC = profile.THC;
-    this.CBD = profile.CBD;
-    this.PurchaseDate = profile.PurchaseDate;
+    this.maintype = profile.maintype;
+    this.subtype = profile.subtype;
+    this.strainname = profile.strainname;
+    this.cbd = profile.cbd;
+    this.thc = profile.thc;
 };
 
 Profile.create = (newProfile, result) => {

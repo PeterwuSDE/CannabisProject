@@ -11,7 +11,7 @@ export default class NewSession extends Component {
     render() {
         return(
             <div>
-                {/*<Header></Header>*/}
+                <Header></Header>
                 <p className="title">Add your Session</p>
                 <p className="description">Date and Time</p>
                 {this.state.visible ? <button id="add-button" onClick={() => {

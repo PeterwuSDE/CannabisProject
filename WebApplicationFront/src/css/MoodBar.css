@@ -1,0 +1,29 @@
+div {
+    width: 255px;
+    height: 48px;
+}
+
+.face1{
+    position: absolute;
+    left: 5px;
+}
+
+.face2{
+    position: absolute;
+    left: 47px;
+}
+
+.face3{
+    position: absolute;
+    left: 89px;
+}
+
+.face4{
+    position: absolute;
+    left: 131px;
+}
+
+.face5{
+    position: absolute;
+    left: 173px;
+}
